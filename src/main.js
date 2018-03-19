@@ -9,9 +9,7 @@ const router = new VueRouter({
   mode: 'history',
   routes
 })
-
-
-new Vue({
+new Vue({ // eslint-disable-line no-new
   el: '#app',
   router,
   render: h => h(App)
