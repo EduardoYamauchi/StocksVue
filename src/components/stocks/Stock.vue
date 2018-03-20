@@ -12,14 +12,15 @@
           <input 
           type="number"
           class="form-control"
-          placeholder="Quantify"
-          @click="buyStock"
+          placeholder="Quantity"
           v-model="quantity"
           >
         </div>
         <div class="pull-right">
           <button
-          class="btn btn-sucess"
+            class="btn btn-sucess"
+            @click="buyStock"
+            :disabled="quantity <= 0"
           >Buy</button>
         </div>
       </div>
@@ -39,12 +40,12 @@
       buyStock() {
         const order = {
           stockId: this.stock.id,
-          stockPrice: this.stockPrice,
+          stockPrice: this.stock.price,
           quantity: this.quantity
         }
-        console.log(order)
-        this.quantity = 0
-      }
+      console.log(order)
+      this.quantity = 0
+      },
     }
   }
 </script>

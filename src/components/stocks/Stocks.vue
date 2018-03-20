@@ -21,4 +21,5 @@ import Stock from './Stock.vue'
       appStock: Stock
     }
   }
+  
 </script>
