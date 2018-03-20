@@ -9,18 +9,18 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-          <router-link  to="/portfolio" activeClass="active" tag="li" > <a>Portfolio</a></router-link>
-          <router-link  to="/stocks" activeClass="active" tag="li" > <a>Stocks</a></router-link>
+        <router-link  to="/portfolio" activeClass="active" tag="li" > <a>Portfolio</a></router-link>
+        <router-link  to="/stocks" activeClass="active" tag="li" > <a>Stocks</a></router-link>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">End of day</a></li>
         <li class="dropdown">
-          <a 
-          href="#" 
-          class="dropdown-toggle" 
+          <a
+          href="#"
+          class="dropdown-toggle"
           data-toggle="dropdown"
-           role="button" 
-           aria-haspopup="true" 
+           role="button"
+           aria-haspopup="true"
            aria-expanded="false"> Save & Load <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Save Data</a></li>
